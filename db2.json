@@ -1,0 +1,58 @@
+{
+    "home-photos": [
+      {
+        "id": 1,
+        "image": "https://photos.google.com/photo/AF1QipOLWurGFNA_BfWWUWkgI70alLgwWKy0gfFrBeZl",
+        "alt": "winterKait"
+      },
+      {
+        "id": 2,
+        "image": "https://photos.google.com/photo/AF1QipM3tHpbElMpa7Qced08cK7GQxyDaFRFNgLng0PS",
+        "alt": "artisticTrey"
+      },
+      {
+        "id": 3,
+        "image": "https://photos.google.com/photo/AF1QipP6yAJgkd1Z6l86bCyIThtHRmcNDT5NtDhdr91m",
+        "alt": "grayKait"
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "high_plains",
+        "limit": 8,
+        "auth_req": false
+      },
+      {
+        "id": 2,
+        "name": "lowlands",
+        "limit": 6,
+        "auth_req": false
+      },
+      {
+        "id": 3,
+        "name": "under_construction",
+        "limit": 8,
+        "auth_req": true
+      },
+      {
+        "id": 4,
+        "name": "pariah",
+        "limit": 14,
+        "auth_req": false
+      },
+      {
+        "id": 5,
+        "name": "python_pass",
+        "limit": 14,
+        "auth_req": false
+      },
+      {
+        "id": 6,
+        "name": "badlands",
+        "limit": 10,
+        "auth_req": false
+      }
+    ]
+  }
+  
