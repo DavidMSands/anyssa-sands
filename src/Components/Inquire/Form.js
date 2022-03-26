@@ -94,7 +94,7 @@ useEffect(() => {
             <textarea name="details" placeholder="" id="details" cols="30" rows="10" value={details} onChange={(e) => setDetails(e.target.value)}></textarea>
         </div>
 
-        <button type="submit"> Submit</button>
+        <button type="submit" id='form-button'> Submit</button>
     </form>
 </div>
   )

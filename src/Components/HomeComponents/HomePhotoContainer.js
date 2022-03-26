@@ -2,11 +2,9 @@ import React, {useEffect} from 'react'
 import HomePhoto from './HomePhoto'
 import Footer from './Footer'
 import InquireButton from '../InquireButton'
-import kaitOverShoulder from '../../Data/Home/kait-over-shoulder.jpg'
 import suzeStare from '../../Data/Home/suze detail.png'
-import grayKait from '../../Data/Home/kait-gray-art.jpg'
 import allie from '../../Data/Home/Allie.jpg'
-import loriClose from '../../Data/Home/lori-close.jpg'
+import kait from '../../Data/Home/dave.jpg'
 
 function HomePhotoContainer() {
     const homePhotosArry =[
@@ -22,7 +20,7 @@ function HomePhotoContainer() {
           },
           {
             id: 3,
-            image: loriClose,
+            image: kait,
             alt: "grayKait"
           }
     ]

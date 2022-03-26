@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
+import { Link } from "react-router-dom"
 import Footer from '../HomeComponents/Footer'
 import {ThingsILove, MeetMyFamily, ColoradoLove} from './ConditionalRender'
 
@@ -33,7 +34,7 @@ function AboutContainer() {
                 <p>My hope is to capture your story with authenticity and create something beautiful that you will hold onto for a lifetime! Photos are such sweet memories you can feel over and over again, and I want to give you something tangible and timeless you can pass down in your family for generations to come.</p>
                 <hr id="aboutline" />
                 <div id="buttonid">
-                    <button type="button" id="inquireButton" onclick="location.href='inquire.html'">Let's connect!</button>
+                    <Link to="/inquire"><button type="button" id="inquireButton" >Let's connect!</button></Link>
                 </div>
             </div>
         </div>

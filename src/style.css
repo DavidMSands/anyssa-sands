@@ -206,9 +206,23 @@ label #cancel {
     margin-right: 2.4%;*/
     margin-top: 150px;
 }
-#secondlogo {
+#secondlogo, .built {
     text-align: center;
+    text-decoration: none;
 }
+
+.built {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-size: .8rem;
+    transition-duration: 250ms;
+}
+
+.built:hover {
+    color: var(--accent-clr);
+}
+
+
 
 #inquireButton {
     background-color: var(--accent-clr);
@@ -227,7 +241,7 @@ label #cancel {
     margin-top: 45px;
 }
 
-#inquireButton:hover {
+#inquireButton:hover, #form-button:hover {
     background-color: var(--background-clr);
     color: var(--accent-clr);
     border-color: var(--accent-clr);
@@ -235,6 +249,18 @@ label #cancel {
     cursor: pointer;
 }
 
+#form-button {
+    background-color: var(--accent-clr);
+    border: none;
+    color: var(--background-clr);
+    width: 130px;
+    height: 40px;
+    font-size: .9rem;
+    text-decoration: none;
+    border-color: var(--background-clr);
+    font-family: 'Playfair Display', serif;
+    transition-duration: 250ms; 
+}
 
 
 #inquireButton a {
@@ -498,7 +524,7 @@ label #cancel {
     margin-top: 75px;
     margin-bottom: 75px;
 }
-footer {
+footer, #footer {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
@@ -538,7 +564,8 @@ footer a:hover {
 #inquireSection {
     max-width: 1500px;
     margin: auto;
-    width: 41%;
+    width: 80%;
+    min-width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -714,6 +741,38 @@ button[type="submit"]:hover {
     color: #292929e2;
 }
 
+@media (max-width: 643px) {
+    
+    #kind-words {
+        margin: -180px 0 0px 300px;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 543px) {
+    
+    #kind-words {
+        margin: -180px 0 0px 200px;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 443px) {
+    
+    #kind-words {
+        margin: -180px 0 0px 150px;
+        font-size: 2.75rem;
+    }
+}
+
+@media (max-width: 367px) {
+    
+    #kind-words {
+        margin: -180px 0 0px 125px;
+        font-size: 2.5rem;
+    }
+}
+
 #review-1{
     margin: 0px 15px 0px 15px;
 }
@@ -858,4 +917,133 @@ button[type="submit"]:hover {
 
 form input {
     outline:  none;
+}
+
+/* investment styling */
+
+#investment-main {
+    max-width: 1500px;
+    margin: auto;
+}
+.split2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#ivestment-port {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    color: var(--accent-clr);
+    letter-spacing: 5px;
+    padding-top: 100px
+}
+
+.investment  {
+    float: right;
+    max-width: 70%;
+    margin: 0px -230px 100px 50px;
+    padding-right: 0px;
+    color: rgb(32, 32, 32);
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  @media (max-width: 1217px) {
+    
+    .investment  {
+        margin: 0px -200px 100px 50px;
+      }
+  }
+  
+  @media (max-width: 985px) {
+    
+    .investment  {
+        margin: 0px -170px 100px 50px;
+        font-size: 90%;
+      }
+  }
+
+  @media (max-width: 885px) {
+    
+    .investment  {
+        margin: 0px -160px 100px 50px;
+        font-size: 80%;
+      }
+  }
+
+  @media (max-width: 810px) {
+    
+    .investment  {
+        margin: 0px -150px 100px 50px;
+        font-size: 63%;
+      }
+  }
+
+  @media (max-width: 673px) {
+    
+    .investment  {
+        margin: 0px -140px 100px 50px;
+        font-size: 53%;
+      }
+    
+  }
+
+  @media (max-width: 585px) {
+
+    
+    .investment  {
+        margin: 0px -130px 100px 50px;
+        font-size: 40%;
+      }
+  }
+
+  @media (max-width: 522px) {
+    #invest-photo {
+        order: 2;
+    }
+
+    #ivestment-port {
+        padding-top: 30px
+    }
+
+    .investment  {
+        max-width: 100%;
+        font-size: 100%;
+        margin: 0px 0px 100px 0px;
+      }
+
+    .split2 {
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .investment  {
+        font-size: 90%;
+      }
+  }
+
+
+
+#invest-pricing {
+    font-family: 'Alex Brush', cursive;
+    color: var(--accent-clr);
+    padding-left: 90px;
+    letter-spacing: 3px;
+}
+
+h3 {
+    color: #347b8b;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-top: 15px;
+}
+
+#pricing-guide li {
+    list-style: none;
+    color:#919191
 }

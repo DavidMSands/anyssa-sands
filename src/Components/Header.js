@@ -15,9 +15,7 @@ function Header() {
 
   return (
     <header>
-        <a href="index.html">
-            <img src={logo} alt="logo" id="logo"/>
-            </a>
+        <Link to="/"><img src={logo} alt="logo" id="logo"/></Link>
         <nav>
             <input type="checkbox" id="check" checked={isChecked} onChange={handleChecked} />
             <label for="check">
