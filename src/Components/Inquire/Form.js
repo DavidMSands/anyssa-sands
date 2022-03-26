@@ -34,15 +34,15 @@ useEffect(() => {
     <div id='inquireSection'>
     <form id="inquire" method="POST" action="https://formspree.io/f/xrgjbvkp">
         <div className="formClass">
-            <label for="name">Your first and last name:*</label>
+            <label for="name">NAME:*</label>
             <input type="text" placeholder="Napoleon Dynamite" name="name" id="name" required value={name} onChange={(e) => setName(e.target.value)}/>
         </div>
         <div className="formClass">
-            <label for="email">Your email:*</label>
+            <label for="email">EMAIL:*</label>
             <input type="email" placeholder="voteforpedro@ilikeyoursleeves.com" name="email" id="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
         <div className="formClass">
-            <label for="session" >Select session type:*</label>
+            <label for="session" >SESSION TYPE:*</label><br/>
 
                 <select name="session-types" id="session" value={session} onChange={(e) => setSession(e.target.value)}>
                     <option value="Engagement" >Couples/Engagement</option>
@@ -52,23 +52,23 @@ useEffect(() => {
                 {/* value={session} onChange={(e) => setSession(e.target.value)} */}
         </div>
         <div className="formClass">
-            <label for="date">Desired session date:</label>
+            <label for="date">DESIRED DATE:</label>
             <input type="date" placeholder="MM/DD/YYYY" name="date" id="date" value={date} onChange={(e) => setDate(e.target.value)} />
         </div>
         <div className="formClass">
-            <label for="location">Location or venue name:</label>
+            <label for="location">LOCATION:</label>
             <input type="text" placeholder="Rocky Mountain National Park" name="location" id="location" value={location} onChange={(e) => setLocation(e.target.value)} />
         </div>
         <div className="formClass">
-            <label for="story">Tell me a bit about you:</label>
-            <textarea name="story" placeholder="Anything about you! What do you love? What aresome of your interests?" id="message" cols="30" rows="10" value={story} onChange={(e) => setStory(e.target.value)}></textarea>
+            <label for="story">TELL ME A BIT ABOUT YOU:</label>
+            <textarea name="story" placeholder="Anything about you! What do you love? What are some of your interests?" id="message" cols="30" rows="10" value={story} onChange={(e) => setStory(e.target.value)}></textarea>
         </div>
         <div className="formClass">
-            <label for="intention">What is your vision for your session or event?</label>
+            <label for="intention">WHAT IS YOUR VISION FOR YOUR SESSION OR EVENT?</label>
             <textarea name="intention" placeholder="What are you hoping for in your photos?" id="intention" cols="30" rows="10" value={intention} onChange={(e) => setIntention(e.target.value)}></textarea>
         </div>
         <div className="formClass">
-        <label for="wheredidyouhearme" >How did you hear about me?</label>
+        <label for="wheredidyouhearme" >HOW DID YOU HEAR ABOUT ME?</label><br/>
 
             <select name="session-types" id="session" value={hear} onChange={(e) => setHear(e.target.value)}>
                 <option value="Google" >Google</option>
@@ -79,18 +79,18 @@ useEffect(() => {
         </div>
         {isOther 
         ? <div className="formClass">
-            <label for="other">Other:</label>
+            <label for="other">OTHER:</label>
             <input type="text" placeholder="Where did you hear about me?" name="other" id="other" value={other} onChange={(e) => setOther(e.target.value)} />
          </div> 
         : null }
         {isReferral 
         ?  <div className="formClass">
-                <label for="who-referred">Who can I thank for referring you?</label>
+                <label for="who-referred">WHO CAN I THANK FOR REFERRING YOU?</label>
                 <input type="text" placeholder="Who referred you?" name="who-referred" id="who-referred" value={whoReferred} onChange={(e) => setWhoReferred(e.target.value)} />
             </div>
         : null }   
         <div className="formClass">
-            <label for="details">Any other details you would like me to know about?</label>
+            <label for="details">ANY OTHER DETAILS YOU WOULD LIKE ME TO KNOW ABOUT?</label>
             <textarea name="details" placeholder="" id="details" cols="30" rows="10" value={details} onChange={(e) => setDetails(e.target.value)}></textarea>
         </div>
 

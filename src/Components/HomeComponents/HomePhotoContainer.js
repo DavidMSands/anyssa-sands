@@ -3,24 +3,26 @@ import HomePhoto from './HomePhoto'
 import Footer from './Footer'
 import InquireButton from '../InquireButton'
 import kaitOverShoulder from '../../Data/Home/kait-over-shoulder.jpg'
-import suzeDetail from '../../Data/Home/suze detail.jpg'
+import suzeStare from '../../Data/Home/suze detail.png'
 import grayKait from '../../Data/Home/kait-gray-art.jpg'
+import allie from '../../Data/Home/Allie.jpg'
+import loriClose from '../../Data/Home/lori-close.jpg'
 
 function HomePhotoContainer() {
     const homePhotosArry =[
         {
             id: 1,
-            image: kaitOverShoulder,
+            image: allie,
             alt: "winterKait"
           },
           {
             id: 2,
-            image: suzeDetail,
+            image: suzeStare,
             alt: "artisticTrey"
           },
           {
             id: 3,
-            image: grayKait,
+            image: loriClose,
             alt: "grayKait"
           }
     ]
