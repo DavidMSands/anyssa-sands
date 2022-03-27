@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
+import { VscMenu } from 'react-icons/vsc'
+import { CgClose } from 'react-icons/cg'
 import logo from '../Data/Home/Namelogo.png'
 
 function Header() {
@@ -19,8 +21,8 @@ function Header() {
         <nav>
             <input type="checkbox" id="check" checked={isChecked} onChange={handleChecked} />
             <label for="check">
-                <i className="fas fa-bars" id="button"></i>
-                <i className="fas fa-times" id="cancel"></i>
+                <VscMenu id="button"/>
+                <CgClose id='cancel' />
             </label>
             <ul>
                 <li onClick={handleCheckedFalse}><Link to="/">Home</Link></li>

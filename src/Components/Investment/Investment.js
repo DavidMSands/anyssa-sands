@@ -21,13 +21,12 @@ const [isHidden, setIsHidden] = useState(true)
               <h1 id='ivestment-port'>PORTRAIT</h1>
               <h2 id='invest-pricing'>pricing guide</h2><br/>
               {isHidden ? null : <Pricing />}
-              
-              {/* <div id='email-container'>
-                <p id='email-add'>Don’t see what you’re looking for? Please fill out an inquiry with details about your project or event so we can create a custom package for you. Can’t wait to work with you and bring your vision to life! All other inquiries, please e-mail photography@anyssasands.com</p>
-              </div> */}
             </div>
         </div>
-        
+        <div id='email-container'>
+            <p className='email-add'>Don’t see what you’re looking for? Please fill out an inquiry with details about your project or event so we can create a custom package for you. I can’t wait to work with you and bring your vision to life!</p><br/>
+            <p className='email-add'>For all other inquiries, please e-mail photography@anyssasands.com</p>
+        </div>
         <Footer />
     </div>
   )

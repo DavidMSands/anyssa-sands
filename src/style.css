@@ -1,13 +1,15 @@
 :root {
     --background-clr: #f9f9f7;
     --accent-clr: #968374;
+
+    --main-font: adobe-garamond-pro, serif;
 }
 
 
 body {
     min-height: 100%;
     border: 5px;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--main-font);
     font-weight: 300;
     font-size: 1.1rem;
     position: relative;
@@ -27,12 +29,9 @@ header::after {
 }
 
 #logo {
-    
     left: 2.5%;
     width: 350px;
-    margin-top: -55px;
-    margin-left: 30px;
-    
+    margin: -55px 0 0 30px;
 }
 
 nav {
@@ -40,11 +39,9 @@ nav {
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
     margin-right: 40px;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--main-font);
 }
 
 nav li {
@@ -70,8 +67,7 @@ label #button,
 label #cancel {
     font-size: 1.5rem;
     float: right;
-    line-height: 80px;
-    margin-right: 40px;
+    margin: 35px 40px 0 0;
     cursor: pointer;
     display: none;
 }
@@ -100,7 +96,7 @@ label #cancel {
 @media (max-width: 910px){
     label #button {
         display: block;
-        margin-top: 0px;
+        
         
     }
 
@@ -144,22 +140,18 @@ label #cancel {
 
 .row {
     max-width: 1500px;
-    margin: auto;
-    margin-top: 75px;
+    margin: 75px auto auto auto;
 }
 
 .row-2 {
     max-width: 1500px;
-    margin: auto;
-    margin-top: -100px;
+    margin: -100px auto auto auto;
 }
 
 .column-pics  {
     float: left;
     width: 33.33%;
-    margin-top: -13px;
-    padding: 0px;
-    margin-bottom: 25px;
+    margin: -13px 0 25px 0;
   }
 
   .column-pics img {
@@ -190,8 +182,9 @@ label #cancel {
   }
   #bobD {
     text-align: center;
+    font-size: 1.25rem;
     margin-top: 110px;
-    color: rgb(32, 32, 32);
+    color: rgb(91, 90, 90);
     font-family: 'Cinzel', serif;
 }
 .back-img {
@@ -231,14 +224,15 @@ label #cancel {
     width: 175px;
     height: 40px;
     font-size: .9rem;
+    margin-top: 70px;
     text-decoration: none;
     border-color: var(--background-clr);
-    font-family: 'Playfair Display', serif;
+    font-family: var(--main-font);
     transition-duration: 250ms;
+    text-transform: uppercase;
 } 
 #buttonid {
     text-align: center;
-    margin-top: 45px;
 }
 
 #inquireButton:hover, #form-button:hover {
@@ -258,7 +252,7 @@ label #cancel {
     font-size: .9rem;
     text-decoration: none;
     border-color: var(--background-clr);
-    font-family: 'Playfair Display', serif;
+    font-family: var(--main-font);
     transition-duration: 250ms; 
 }
 
@@ -293,21 +287,20 @@ label #cancel {
 .column2  {
     float: right;
     max-width: 50%;
-    margin-top: 25px;
-    padding-right: 0px;
+    margin: 25px 15px 0 40px;
     color: rgb(32, 32, 32);
     font-size: .9rem;
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-right: 15px;
-    margin-left: 40px;
   }
   
 
   #mainaboutp {
       padding: 150px 65px 0px 0px;
       font-size: 17px;
+      font-weight: 400;
+      color: #747272;
   }
 
   #aboutline {
@@ -315,9 +308,7 @@ label #cancel {
     color: var(--accent-clr);
     height: .005rem;
     border-width: 1;
-    margin-top: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 30px 200px 0 200px;
   }
 
   @media (max-width: 1414px) {
@@ -344,8 +335,6 @@ label #cancel {
         max-width: 100%;
         padding-top: 30px;
         margin: auto;
-        padding-right: 0px;
-        margin-right: 0px;
     }
 
     #mainaboutp {
@@ -375,114 +364,6 @@ label #cancel {
 }
 
 /*portfolio*/
-
-/* #split-3 {
-    display: flex;
-    flex-direction: row;
-}
-
-.modal {
-    display: block; 
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
-    backdrop-filter: blur(4px);
-  }
-  
-
-  .modal-content {
-    background-color: #fff;
-    margin: 25% auto; 
-    padding: 20px 20px 20px 65px;
-    border: 1px solid #888;
-    width: 40%; 
-    background-color: #fff;
-    /* background-image:
-    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-    linear-gradient(#eee .1em, transparent .1em);
-    background-size: 100% 1.3em; */
-  /* } */
-
-/* .portfolio-container {
-    float: left;
-    width: 33.33%;
-    margin-top: -13px;
-    padding: 0px;
-    margin-bottom: 60px;
-}
-
-.portfolio-column {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 75%;
-  }
-
-  .portfolio-column-outer-right {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 75%;
-    margin-right: 49%;
-    object-fit: cover;
-    
-    
-  }
-
-  .portfolio-column-outer-left {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 75%;
-    margin-left: 25%;
-  }
-
-  .portfolio-column-2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 70%;
-  }
-
-  .portfolio-column-outer-right-2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 75%;
-    margin-right: 50%;
-  }
-
-  .portfolio-column-outer-left-2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 75%;
-    margin-left: 25%;
-  }
-
- #flowers {
-     max-width: 83.5%;
-     margin: auto;
- }
-
- .portfolio-container-2 {
-     padding-bottom: 65px;
- }
-
- #bw-jk {
-    max-width: 83.5%;
-    margin: auto;
-}
-
-#portfolio-container {
-    margin: auto;
-    max-width: 1500px;
-} */ 
 
 #portfolio-container {
     max-width: 1500px;
@@ -517,18 +398,22 @@ label #cancel {
 
 .aaronS {
     text-align: center;
-    margin-top: 0px;
     color: rgb(32, 32, 32);
     font-family: 'Cinzel', serif;
     text-transform: uppercase;
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin: 75px 0 75px 0;
 }
-footer, #footer {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
 
+footer, #footer {
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#footer-hr {
+    margin-top: 50px;
+    background-color: rgb(8, 255, 8);
 }
 
 footer a {
@@ -573,16 +458,16 @@ footer a:hover {
 }
 
 ::-webkit-input-placeholder { 
-    font-family: 'Playfair Display', serif;
+    font-family: var(--main-font);
   }
   ::-moz-placeholder { 
-    font-family: 'Playfair Display', serif;
+    font-family: var(--main-font);
   }
   :-ms-input-placeholder { 
-    font-family: 'Playfair Display', serif;
+    font-family: var(--main-font);
   }
   :-moz-placeholder { 
-    font-family: 'Playfair Display', serif;
+    font-family: var(--main-font);
   }
 
 .formClass {
@@ -617,8 +502,8 @@ textarea {
 button[type="submit"] {
     border-width: 1px;
     border-radius: 5px;
-    padding: 10px;
-    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    font-family: var(--main-font);
     font-size: .9rem;
     background-color: #f4f1ec;
     transition-duration: 250ms;
@@ -736,7 +621,7 @@ button[type="submit"]:hover {
 #kind-words {
     font-family: 'Alex Brush', cursive;
     position: absolute;
-    margin: -180px 0 0px 400px;
+    margin: -180px 0px 0px 400px;
     font-size: 3rem;
     color: #292929e2;
 }
@@ -775,10 +660,14 @@ button[type="submit"]:hover {
 
 #review-1{
     margin: 0px 15px 0px 15px;
+    font-weight: 400;
+    color: #747272;
 }
 
 #review-1-people{
     padding-top: 25px;
+    font-weight: 400;
+    color: #747272;
 }
 
 .about-me-column {
@@ -893,12 +782,19 @@ button[type="submit"]:hover {
 }
 
 #follow-me {
-    margin: 130px 0px 15px 0px;
+    margin: 100px 0px 15px 0px;
+    font-weight: 400;
+    color: #747272;
 }
 
 #follow-me a { 
     text-decoration: none;
-    color: rgb(32, 32, 32)
+    font-weight: 400;
+    color: #747272;
+}
+
+#follow-me a:hover {
+    color: var(--accent-clr);
 }
 
 #insta-icon:hover {
@@ -931,7 +827,7 @@ form input {
 }
 
 #ivestment-port {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--main-font);
     font-weight: 100;
     color: var(--accent-clr);
     letter-spacing: 5px;
@@ -1045,12 +941,19 @@ h3 {
 
 #pricing-guide li {
     list-style: none;
-    color:#919191
+    font-weight: 400;
+    color: #747272;
 }
 
+#email-container {
+    max-width: 1500px;
+    text-align: center;
+}
 
-#email-add {
-    max-width: 500px;
+.email-add {
+    padding: 0 20% 0 20%;
+    font-weight: 400;
+    color: #747272;
 }
 
 .pricing-section {
@@ -1059,6 +962,11 @@ h3 {
     animation-fill-mode: forwards;
 }
 
+@media (max-width: 910px) {
+    .pricing-section {
+        animation: none;
+    }
+}
 
 
 @keyframes fadeInAnimation {
