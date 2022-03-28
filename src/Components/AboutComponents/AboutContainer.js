@@ -27,11 +27,10 @@ function AboutContainer() {
                 <img className="prof" src="https://lh3.googleusercontent.com/pw/AM-JKLWpLNWXSHLnfgbjtGwf_-LpmtMBQpE62l70Kv2FrkSDCPhp8gfvWV8SVsQOiVxwlmedJkQQ0NiPI2wl8dSB1lwpLVyNKfug7FRsrKQXy1kKdXrWJ4m5JBHKNmFUV7to2ozj36dYF_gMlHMKVAAT7k8r=w978-h1304-no?authuser=0" alt="profpic" id="profpic" />
             </div>
             <div className="column2" id="mainaboutp">
-                <p id="hello"></p>
                 <p id='anyssa-sands'>Hi, I'm Anyssa!</p>
-                <p id="aboutme-p2">I grew up in Denver, CO, but have lived in Nashville, TN, and Southern California. Not long after marrying my husband (who also grew up in Denver), we moved right on back to Colorado where we now live with our two crazy Australian Shepherds. </p>
-                <p id="aboutme-p3">I’m a creative at heart, with a background in commercial songwriting, so I love art that connects people through storytelling. As someone who has always enjoyed writing in its many forms, what I love about photography is that it tells a story visually, without any words at all, yet can still have a deeply emotional impact on the human soul. A photo is so much more than just an image…it freezes a specific moment in time that you can carry with you forever.</p>
-                <p>My hope is to capture your story with authenticity and create something beautiful that you will hold onto for a lifetime! Photos are such sweet memories you can feel over and over again, and I want to give you something tangible and timeless you can pass down in your family for generations to come.</p>
+                <p id="aboutme-p2">I grew up in Denver, CO, but have lived in Nashville, TN, and Southern California. Not long after marrying my husband, we moved back to Denver where we now live with our two crazy Australian Shepherds. </p>
+                <p id="aboutme-p3">I’m a creative at heart, with a background in commercial songwriting, so I love art that connects people through storytelling. As someone who has always enjoyed writing in its many forms, what I love about photography is that it tells a story visually, without any words at all, yet can still have a deeply emotional impact. A photo is so much more than just an image…it freezes a specific moment in time that you can carry with you forever.</p>
+                <p>My hope is to capture your story with authenticity and create something beautiful that you will hold onto for a lifetime! I want to give you something tangible and timeless you can pass down in your family for generations to come.</p>
                 <hr id="aboutline" />
                 <div id="buttonid">
                     <Link to="/inquire"><button type="button" id="inquireButton" >Let's connect!</button></Link>

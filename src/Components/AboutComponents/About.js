@@ -1,12 +1,14 @@
 import React from 'react'
-import Header from '../Header'
 import AboutContainer from './AboutContainer'
+import { motion } from 'framer-motion'
 
 function About() {
   return (
-    <div>
-      <AboutContainer />
-    </div>
+    <motion.div initial={{opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+      <div>
+        <AboutContainer />
+      </div>
+    </motion.div>
   )
 }
 

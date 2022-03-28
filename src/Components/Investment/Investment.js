@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, lazy } from 'react'
 import investmentPhoto from '../../Data/Copy of Photography Pricing 120421-2 (1).png'
 import Footer from '../HomeComponents/Footer'
 import Pricing from './Pricing'
+import { motion } from 'framer-motion'
 
 function Investment() {
 const [isHidden, setIsHidden] = useState(true)
@@ -12,6 +13,7 @@ const [isHidden, setIsHidden] = useState(true)
   }, 500)
 
   return (
+    <motion.div initial={{opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
     <div id='investment-main'>
       <div className=" split2" >
             <div className="investment" id='invest-photo'>
@@ -29,6 +31,7 @@ const [isHidden, setIsHidden] = useState(true)
         </div>
         <Footer />
     </div>
+    </motion.div>
   )
 }
 

@@ -35,16 +35,17 @@ useEffect(() => {
     <form id="inquire" method="POST" action="https://formspree.io/f/xrgjbvkp">
         <div className="formClass">
             <label for="name">NAME:*</label>
-            <input type="text" placeholder="Napoleon Dynamite" name="name" id="name" required value={name} onChange={(e) => setName(e.target.value)}/>
+            <input type="text" placeholder="First & last name" name="name" id="name" required value={name} onChange={(e) => setName(e.target.value)}/>
         </div>
         <div className="formClass">
             <label for="email">EMAIL:*</label>
-            <input type="email" placeholder="voteforpedro@ilikeyoursleeves.com" name="email" id="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" placeholder="Your e-mail" name="email" id="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
         <div className="formClass">
             <label for="session" >SESSION TYPE:*</label><br/>
 
                 <select name="session-types" id="session" value={session} onChange={(e) => setSession(e.target.value)}>
+                    <option value="Other" >Other</option>
                     <option value="Engagement" >Couples/Engagement</option>
                     <option value="Family" >Family</option>
                     <option value="Individual Portraits" >Individual Portraits</option>
@@ -57,7 +58,7 @@ useEffect(() => {
         </div>
         <div className="formClass">
             <label for="location">LOCATION:</label>
-            <input type="text" placeholder="Rocky Mountain National Park" name="location" id="location" value={location} onChange={(e) => setLocation(e.target.value)} />
+            <input type="text" placeholder="Ex. Rocky Mountain National Park" name="location" id="location" value={location} onChange={(e) => setLocation(e.target.value)} />
         </div>
         <div className="formClass">
             <label for="story">TELL ME A BIT ABOUT YOU:</label>
@@ -65,7 +66,7 @@ useEffect(() => {
         </div>
         <div className="formClass">
             <label for="intention">WHAT IS YOUR VISION FOR YOUR SESSION OR EVENT?</label>
-            <textarea name="intention" placeholder="What are you hoping for in your photos?" id="intention" cols="30" rows="10" value={intention} onChange={(e) => setIntention(e.target.value)}></textarea>
+            <textarea name="intention" placeholder="Fun? Romatic? Classic? Any props? Tell me your dream!" id="intention" cols="30" rows="10" value={intention} onChange={(e) => setIntention(e.target.value)}></textarea>
         </div>
         <div className="formClass">
         <label for="wheredidyouhearme" >HOW DID YOU HEAR ABOUT ME?</label><br/>
@@ -94,7 +95,7 @@ useEffect(() => {
             <textarea name="details" placeholder="" id="details" cols="30" rows="10" value={details} onChange={(e) => setDetails(e.target.value)}></textarea>
         </div>
 
-        <button type="submit" id='form-button'> Submit</button>
+        <button type="submit" id='form-button'>Submit</button>
     </form>
 </div>
   )

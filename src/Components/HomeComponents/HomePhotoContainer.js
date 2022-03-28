@@ -34,7 +34,7 @@ function HomePhotoContainer() {
         </div>
     </section>
     <section>
-        <div id="bobD">
+        <div className='quote'>
             <p><i>"Take care of all your memories, for you cannot relive them."</i> -<i>Bob Dylan</i></p>
         </div>
         <div className="back-img"></div>
